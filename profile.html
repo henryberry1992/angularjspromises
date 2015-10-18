@@ -1,0 +1,30 @@
+<div class="profile-tile">
+  <!--TODO #4: Show the user's profile picture-->
+  <img class="avatar">
+  <div class="text-center">
+    <div>
+      <h3>
+        <!--TODO #4: show the user's name-->{{ctrl.name}}
+      </h3>
+    </div>
+    <div class="text-center">
+      <!--TODO #4: show the user's e-mail-->{{ctrl.email}}
+    </div>
+    <div>
+      Username: <!--TODO #4: show the user's username-->{{ctrl.username}}
+    </div>
+    <div>
+      Age: <!--TODO #4: show the user's age-->{{ctrl.age}}
+    </div>
+    <div>
+      Favourite Color
+      <!--TODO #4: make the background color of this div the user's favourite color-->
+      <div class="fav-color" ng-style="{'background-color': 'red'}"></div>
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+  <!--TODO #4: Log the user out when they click this button-->
+  <button class="btn btn-primary" ng-click="ctrl.logMeOut()">Log Out</button>
+</div>
